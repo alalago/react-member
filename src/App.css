@@ -176,3 +176,34 @@ button {
   display: block;
   background: #666;
 }
+
+/* info page style */
+.info-page {
+  background: #fff;
+  width: 100%;
+  padding: 6.5% 6.5% 10%;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+.info-page ul {
+  margin: 6% 0;
+}
+.info-page li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.22rem;
+  line-height: 2rem;
+}
+.info-page hr {
+  margin: 5% 0;
+}
+h6 {
+  font-size: 1.22rem;
+}
+.info-page span {
+  color: #d63939;
+  font-size: 1.1rem;
+  padding: 6% 0;
+  display: block;
+}
