@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Info from './images/button01.png';
 import Salary from './images/button02.png';
 import Mission from './images/button03.png';
-
+import { Link } from "react-router-dom";
 
 const HomeFeature = () => {
     const [show, toggleShow] = React.useState(false);
@@ -25,8 +25,10 @@ const HomeFeature = () => {
         <div className="feature">
             <div className='row'>
                 <div className="info">
-                    <img src={Info} alt="Info" />
-                    <h3>會員資訊</h3>
+                    <Link to="/memberInfo">
+                        <img src={Info} alt="Info" />
+                        <h3>會員資訊</h3>
+                    </Link>
                 </div>
                 <div className="salary" onClick={() => changeName("薪水查詢")}>
                     <img src={Salary} alt="Salary" />

@@ -2,9 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* fix mobile device link style */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  text-decoration: none;
+  color: #000;
 }
 html {
   font-size: 14px;
+  background: #3d622b;
 }
 .App {
   max-width: 420px;
@@ -87,6 +94,7 @@ main .row {
   border-radius: 20px;
   margin-bottom: 5%;
   padding: 2.5%;
+  cursor: pointer;
 }
 .mission {
   display: flex;
@@ -118,6 +126,7 @@ button {
   display: block;
   font-size: 1.3rem;
   font-weight: 900;
+  cursor: pointer;
 }
 .notice {
   background: rgba(196, 196, 196, 0.5);
@@ -183,6 +192,7 @@ button {
   width: 100%;
   padding: 6.5% 6.5% 10%;
   border-radius: 20px 20px 0 0;
+  position: relative;
 }
 .info-page ul {
   margin: 6% 0;

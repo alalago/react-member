@@ -1,12 +1,15 @@
 import React from 'react'
 import Header from './MemberHeader'
+import { Link } from "react-router-dom";
 
 const MemberInfo = () => {
   return (
     <div className='App'>
         <Header />
         <div className='info-page'>
-            <div className="close"></div>
+            <Link to="/">
+                <div className="close"></div>
+            </Link>
             <h3>基本資料</h3>
             <ul>
                 <li>
@@ -54,7 +57,7 @@ const MemberInfo = () => {
                     <p>03112340210583</p>
                 </li>
             </ul>
-            <button>修改資料</button>
+            <Link to="/modifyInfo"><button>修改資料</button></Link>
             <span>註: 灰色字體為您修改的新資料，待管理員審核 完成後即會變回黑色。</span>
         </div>
       

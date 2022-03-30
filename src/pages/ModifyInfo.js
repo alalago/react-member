@@ -1,13 +1,16 @@
 import React from 'react'
 import Header from './MemberHeader'
 import Arrow from './images/arrow.png'
+import { Link } from "react-router-dom";
 
 const ModifyInfo = () => {
   return (
     <div className='App'>
         <Header />
         <div className="info-modify">
-            <div className="close"></div>
+            <Link to="/memberInfo">
+                <div className="close"></div>
+            </Link>
             <h3>修改您的照服員基本資料</h3>
             <p>請選擇您需要修改的欄位進行填寫，若不需修改，請保留原始資料即可。</p>
             <form action="">
@@ -38,20 +41,23 @@ const ModifyInfo = () => {
                 </ol>
             </div>
             <div className="btn">
-                <div className="back-btn">
-                    <div className="arraw">
-                        <img src={Arrow} alt="photo" />
+                <Link to="/memberInfo">     
+                    <div className="back-btn">
+                        <div className="arraw">
+                            <img src={Arrow} alt="photo" />
+                        </div>
+                        <span>會員資料</span>
                     </div>
-                    <span>會員資料</span>
-                </div>
-                <div className="submit-btn">
-                    <span>下一步<br />
-                    送出修改</span>        
-                    <div className="arraw">
-                        <img src={Arrow} alt="photo" />
+                </Link>
+                <Link to="/memberInfo">     
+                    <div className="submit-btn">
+                        <span>下一步<br />
+                        送出修改</span>        
+                        <div className="arraw">
+                            <img src={Arrow} alt="photo" />
+                        </div>
                     </div>
-
-                </div>
+                </Link>
             </div>
 
 
