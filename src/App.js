@@ -6,7 +6,7 @@ import ModifyInfo from'./pages/ModifyInfo';
 function App() {
 
   return (
-        <ModifyInfo />
+        <Home />
   );
 }
 

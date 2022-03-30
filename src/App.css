@@ -130,7 +130,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  /* display: none; */
 }
 .notice .dialog {
   background: #f1f3f6;
@@ -183,7 +183,6 @@ button {
   width: 100%;
   padding: 6.5% 6.5% 10%;
   border-radius: 20px 20px 0 0;
-  position: relative;
 }
 .info-page ul {
   margin: 6% 0;
