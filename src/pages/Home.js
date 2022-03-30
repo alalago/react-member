@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Photo from './images/member-photo.png';
 import HomeFeature from './HomeFeature'
 import '../App.css';
 
 
 const Home = () => {
-  
+  const [copySuccess, setCopySuccess] = useState('點我複製推薦碼');
+  const copyToClipBoard = async copyMe => {
+    try {
+      await navigator.clipboard.writeText(copyMe);
+      setCopySuccess('已複製！');
+    } catch (err) {
+      setCopySuccess('點我再試一次！');
+    }
+  };
   return (
     <div className="App">
       <header>
@@ -23,27 +31,11 @@ const Home = () => {
         </div>
         <HomeFeature />
 
-        {/* <div className="feature">
-          <div className='row'>
-            <div className="info">
-              <img src={Info} alt="Info" />
-              <h3>會員資訊</h3>
-            </div>
-            <div className="salary" data-title="薪水查詢">
-              <img src={Salary} alt="Salary" />
-              <h3>薪水查詢</h3>
-            </div>
-          </div>
-          <div className="mission" data-title="平台任務">
-            <img src={Mission} alt="Mission" />
-            <h3>平台任務</h3>
-          </div>
-        </div> */}
       </main>
       <div className="code">
           <h3>我的推薦碼</h3>
           <p>我的推薦碼是Homexin1314520，快點一起來Home心接案賺錢吧！註冊成功還有100元可以領取唷！</p>
-          <button className='copy-code'>點我複製推薦碼</button>        
+          <button onClick={() => copyToClipBoard('Homexin1314520')} className='copy-code'>{copySuccess}</button>                  
       </div>
 
     </div>
