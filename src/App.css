@@ -207,3 +207,100 @@ h6 {
   padding: 6% 0;
   display: block;
 }
+
+/* info modify page style */
+.info-modify {
+  background: #fff;
+  width: 100%;
+  padding: 6.5% 6.5% 20%;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+.info-modify p {
+  font-size: 1.22rem;
+  padding: 2% 0;
+}
+.info-modify form {
+  margin: 2% auto 6.5%;
+}
+.info-modify label {
+  font-size: 1.22rem;
+  width: 34%;
+  height: 34px;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  margin: 3% 4% 3% 0;
+}
+.info-modify input,
+.info-modify select {
+  font-size: 1.15rem;
+  height: 38px;
+  border: 1.5px solid #cccfd3;
+  background: #f6f6f6;
+  border-radius: 6px;
+  width: 58.5%;
+  padding: 8px 15px;
+  margin: 3% 0;
+}
+#height,
+#weight {
+  width: 43%;
+  margin-right: 4%;
+}
+input:focus-visible,
+select:focus-visible {
+  outline: 1px solid #3c622b;
+  border-color: #3c622b;
+}
+.info-modify span {
+  font-size: 1.15rem;
+}
+.info-modify h4 {
+  text-align: center;
+  font-size: 1.45rem;
+}
+.attention {
+  border-radius: 20px;
+  border: 1px solid #cccfd3;
+  padding: 5% 5% 5% 12%;
+  margin: 4% auto;
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0;
+}
+.btn .back-btn,
+.btn .submit-btn {
+  background: #f1f3f6;
+  width: 135px;
+  height: 60px;
+  border: 2px solid rgba(255, 172, 48, 0.5);
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn .back-btn .arraw,
+.btn .submit-btn .arraw {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 172, 48, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+}
+.back-btn span {
+  font-size: 1rem;
+  padding-right: 10px;
+  text-align: center;
+}
+.submit-btn span {
+  font-size: 1rem;
+  padding-left: 10px;
+  text-align: center;
+}
+.btn .submit-btn .arraw {
+  transform: rotate(180deg);
+}

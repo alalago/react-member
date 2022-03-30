@@ -45,7 +45,13 @@ const Home = () => {
           <p>我的推薦碼是Homexin1314520，快點一起來Home心接案賺錢吧！註冊成功還有100元可以領取唷！</p>
           <button className='copy-code'>點我複製推薦碼</button>        
       </div>
-
+      <section className='notice'>
+        <div className="dialog">
+            <div className="close"></div>
+            <h4>哎呀!<br />本頁面還沒有開放!</h4>
+            <h5>敬請期待薪水查詢頁面的上線!</h5>
+        </div>
+    </section>  
     </div>
   )
 }
