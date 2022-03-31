@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './MemberHeader'
 import Arrow from './images/arrow.png'
 import { Link } from "react-router-dom";
+import { Formik } from 'formik';
 
 const ModifyInfo = () => {
   return (

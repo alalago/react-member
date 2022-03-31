@@ -1,12 +1,11 @@
 ## Homexin Member App
 
 My first React App, built with React, JSX, JavaScript, and CSS.
+https://cosmic-elf-64416d.netlify.app/
 
 ## Project Screen Shots
 
-![](src/pages/images/screen-shot01.jpeg)
-![](src/pages/images/screen-shot02.jpeg)
-![](src/pages/images/screen-shot03.jpeg)
+![](src/pages/images/screen-shot.jpg)
 
 ## Installation and Setup Instructions
 
@@ -29,6 +28,10 @@ To Visit App:
 > localhost:3000
 
 ## Reference Document
+
+###### Formik
+
+https://formik.org/docs/overview
 
 ###### React Router
 
